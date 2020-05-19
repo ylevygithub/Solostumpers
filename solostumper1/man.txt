@@ -1,0 +1,76 @@
+HEAD(1)           Manuel de l'utilisateur Linux           HEAD(1)
+
+
+NOM
+       head - Afficher le début d'un fichier.
+
+SYNOPSIS
+       head [-c N[bkm]] [-n N] [-qv] [--bytes=N[bkm]] [--lines=N]
+       [--quiet]  [--silent]  [--verbose]  [--help]   [--version]
+       [fichier...]
+
+       head [-Nbcklmqv] [fichier...]
+
+DESCRIPTION
+       Cette page de manuel documente la version GNU de head.
+
+       head  affiche la première partie (10 lignes par défaut) de
+       chacun des fichiers mentionnés. La  lecture  se  fait  sur
+       l'entrée standard si aucun fichier n'est indiqué, ou si le
+       nom `-' est fourni.
+
+       Si plusieurs fichiers sont fournis, un en-tête est affiché
+       avant  chacun  d'eux,  mentionnant le nom du fichier entre
+       `==>' et `<=='.
+
+   OPTIONS
+       head accepte deux formats d'options : le  nouveau  où  les
+       nombres  sont  des arguments suivant les options indiquées
+       par des  lettres  et  l'ancien  dans  lequel  les  nombres
+       précèdent les lettres d'option.
+
+       -c N, --bytes N
+              Afficher les N premiers octets. N est un entier non
+              nul, suivi éventuellement  d'une  lettre  indiquant
+              une unité différente de l'octet.
+
+              b      Bloc de 512 octets.
+
+              k      Bloc de 1 Ko.
+
+              m      Bloc de 1 Mo.
+
+       -n N, --lines N
+              Afficher les N premières lignes.
+
+       -q, --quiet, --silent
+              Ne  pas  afficher les en-têtes mentionnant les noms
+              de fichiers.
+
+       -v, --verbose
+              Toujours afficher les en-têtes mentionnant les noms
+              de fichiers.
+
+       --help Afficher  un  message d'aide sur la sortie standard
+              et terminer normalement.
+
+
+
+
+
+FSF                      12 Janvier 1997                        1
+
+
+
+
+
+HEAD(1)           Manuel de l'utilisateur Linux           HEAD(1)
+
+
+       --version
+              Afficher un numéro de version sur la  sortie  stan­
+              dard et terminer normalement.
+
+
+TRADUCTION
+       Christophe Blaess, 1997.

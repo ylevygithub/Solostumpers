@@ -1,0 +1,45 @@
+head include
+head: error reading 'include': Is a directory
+
+head test.tx
+head: cannot open 'test.tx' for reading: No such file or directory
+
+head include man.txt
+==> include <==
+head: error reading 'include': Is a directory
+
+==> man.txt <==
+
+head -cz && head -c z && head -cz man.txt
+head: invalid number of bytes: ‘z’
+
+head -n z && head -nz
+head: invalid number of lines: ‘z’
+
+ head -n + test.txt && head -n+ test.txt
+ head: invalid number of lines: ‘+’
+
+ head -n - test.txt && head -n- test.txt
+ head: invalid number of lines: ‘’
+
+head -c
+head: option requires an argument -- 'c'
+Try 'head --help' for more information.
+
+head -c4
+//boucle inf
+
+head -q z
+head: cannot open 'z' for reading: No such file or directory
+
+head -q 5
+head: cannot open '5' for reading: No such file or directory
+
+head -v1 test.txt
+head: invalid trailing option -- 1
+Try 'head --help' for more information.
+
+head -vl test.txt && head -vlklk test.txt
+head: invalid option -- 'l'
+Try 'head --help' for more information.
+
