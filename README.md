@@ -1,0 +1,2 @@
+# Solostumpers
+Exams en solo
